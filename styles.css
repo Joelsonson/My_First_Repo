@@ -82,6 +82,7 @@ html, body {
   a:hover, a:active {
     cursor: none;
   }
+  
 /* Content styles */
 .content-wrapper {
     display: grid;
@@ -186,7 +187,7 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200%; /* Increase the height to create the parallax effect */
+    height: 200%; 
     object-fit: cover;
     position: absolute;
     top: -50%;
@@ -467,5 +468,20 @@ footer {
     .footer-social {
         margin-top: 1rem;
     }
+}
+
+.about-hero-image {
+    text-align: center;
+    grid-column: 1 / span 3;
+    position: relative;
+    overflow: hidden;
+    height: 3022px; /* Adjust the height according to your preference */
+}
+
+
+.about-hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
