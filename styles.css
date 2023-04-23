@@ -165,7 +165,7 @@ h1 {
     grid-column: 1 / span 3;
     position: relative;
     overflow: hidden;
-    height: 500px; /* Adjust the height according to your preference */
+    height: 500px; 
 }
 
 
@@ -475,7 +475,7 @@ footer {
     grid-column: 1 / span 3;
     position: relative;
     overflow: hidden;
-    height: 3022px; /* Adjust the height according to your preference */
+    height: 3022px;
 }
 
 
