@@ -73,3 +73,22 @@ const observeScramble = (element, text, duration, delay) => {
   scrambleElem.innerText = "";
   observeScramble(scrambleElem, targetText, 500, 30); // duration: 500ms (0.5s), delay: 30ms
   
+// Select the parallax element
+const parallax = document.querySelector('.parallax');
+const viewProjectButton = document.querySelector('.view-project');
+
+// Add the event listener for the scroll event
+window.addEventListener('scroll', () => {
+  // Calculate the scroll position percentage (0-100%)
+  const scrollPercentage = (window.pageYOffset / (document.body.scrollHeight - window.innerHeight)) * 80;
+
+  // Update the translateY value based on the scroll position percentage
+  parallax.style.transform = `translateY(${scrollPercentage * 0.9 - 5}%)`;
+
+    // Show the button if the scrollPercentage is between 45 and 55, otherwise hide it
+    if (scrollPercentage > 15 && scrollPercentage < 25) {
+      viewProjectButton.style.opacity = '1';
+    } else {
+      viewProjectButton.style.opacity = '0';
+    }
+});
